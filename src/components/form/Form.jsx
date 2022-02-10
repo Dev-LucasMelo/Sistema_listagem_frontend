@@ -10,7 +10,7 @@ const Form = () => {
                 <FaWpforms className='icon-form' />
             </div>
             <div>
-                <form className='form-container' action='http://localhost:4000/finalizado' method='post' >
+                <form className='form-container' action='https://lucasmelonodeform.herokuapp.com/finalizado' method='post' >
                     <p><input required type="text" name='name' className='name' placeholder='Informe seu nome' /></p>
 
 
