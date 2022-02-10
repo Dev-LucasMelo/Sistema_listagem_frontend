@@ -1,0 +1,108 @@
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(216, 216, 216, 0.562);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.425);
+    width: 100%;
+    padding: 0px 10px 0px 10px ;
+    margin: -22px -10px 10px -10px;
+    overflow-x: hidden;
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.308);
+}
+.tittle-container {
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: bold;
+font-size: 23px;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text {
+    margin: 0px 10px 0px 5px;
+}
+.react-icon {
+    animation: rotate  5s linear infinite;
+    margin: 4px 0px 0px 5px;
+    
+}
+
+@keyframes rotate {
+    to { transform:rotate(360deg)}
+}
+
+.identify-container{
+font-size: 20px;
+}
+.icon-github{
+    font-size: 43px;
+    transition: .4s;
+}
+.github-id {
+    font-weight: bold;
+    margin: 3px 0px 0px 0px ;
+    font-size: 23px;
+    transition: .4s;
+}
+.link-github {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-github:hover {
+    transition: .2s;
+    color: rgb(118, 25, 204);
+} /*Telas grandes*/
+@media (min-width:1760px) {
+    .tittle-container {
+        font-size: 30px;
+        margin: 10px 0px 0px 0px;
+    }
+    .github-id {
+        font-size: 30px;
+        margin: 15px 0px 0px 0px;
+    }
+    .icon-github {
+        font-size: 45px;
+        margin: 8px 0px 0px 0px;
+    }
+}
+/*Telas Pequenas*/
+@media (max-width:670px) {
+    .tittle-container {
+        font-size: 16px;
+        margin: 10px 0px 0px 0px;
+    }
+    .github-id {
+        font-size: 15px;
+        margin: 15px 0px 0px 0px;
+    }
+    .icon-github {
+        font-size: 19px;
+        margin: 15px 0px 0px 0px;
+    }
+}
+@media (max-width:445px) {
+    .tittle-container {
+        font-size: 11px;
+        margin: 10px 0px 0px 0px;
+    }
+    .github-id {
+        font-size: 10px;
+        margin: 15px 0px 0px 0px;
+    }
+    .icon-github {
+        font-size: 15px;
+        margin: 15px 0px 0px 0px;
+    }
+    .react-icon {
+        margin: 4px 0px 0px 0px;
+        
+    }
+}

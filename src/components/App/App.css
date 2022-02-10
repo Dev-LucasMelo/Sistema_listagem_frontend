@@ -1,0 +1,110 @@
+.app-container {
+    margin: 20vh 0 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.list,
+.register{  
+    border-radius: 9px;
+    padding: 12px;
+    font-size: 30px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid;
+    transition: .3s;
+    
+}
+.list-container,
+.register-container{
+
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid rgba(0, 0, 0, 0.637);
+    margin-top: 2 0vh; 
+    width: 50vh;
+    height: 40vh;
+    background-color: rgba(216, 216, 216, 0.562);
+    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.322);
+}
+p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.list:hover,
+.register:hover {
+    background-color: rgb(116, 224, 116);
+    border: 2px solid white;
+    font-weight: bold;
+    color: white;
+    transition: .3s;
+    transform: scale(0.9);
+} /*Telas Grandes*/
+@media (min-width: 1720px) {
+    .list,
+    .register{ 
+        padding: 13px;
+        font-size: 40px;
+    }  
+    p {
+        font-size: 30px;
+    }
+}
+
+/*Telas pequenas*/
+@media (max-width: 700px) {
+    .list,
+    .register{ 
+        padding: 10px;
+        font-size: 23px;
+    }  
+    .list-container,
+    .register-container{ 
+        width: 40vh;
+        height: 30vh;
+    }
+    p {
+        font-size: 15px;
+    }
+}@media (max-width: 520px) {
+    .list,
+    .register{ 
+        padding: 6px;
+        font-size: 17px;
+    }  
+    .list-container,
+    .register-container{ 
+        width: 30vh;
+        height: 20vh;
+    }
+    p {
+        font-size: 15px;
+    }
+}@media (max-width: 400px) {
+    .app-container {
+        margin: 10vh 0 0 0;
+        height: 60vh;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .list,
+    .register{ 
+        padding: 6px;
+        font-size: 14px;
+    }  
+    .list-container,
+    .register-container{ 
+        width: 22vh;
+        height: 15vh;
+    }
+    p {
+        font-size: 11px;
+    }
+
+}
+

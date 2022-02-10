@@ -1,0 +1,195 @@
+
+.profile-container {
+    border: 1px solid;
+    display: block;
+    float: left;
+    background-color: white;
+    width: 20%;
+    min-width: 200px;
+    max-width: 240px;
+    height: max-content;
+    padding: 0 20px; 
+    margin: 1% 5%;
+    border-radius: 15px;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.438);
+    transition: .3s;
+}
+.profile {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid;
+    
+}
+.dados {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+.gender-container {
+    margin: 0 7px 0 0 ;
+}
+.gender-icon{
+    font-size: 60px;
+}
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
+    text-align: left;
+    width: 90%;
+    margin: auto;
+    padding: 10px 0px ;
+    
+}
+.about-text{
+    font-size: 17px;
+    overflow-y: scroll;
+    border: none;
+    width: 100%;
+    max-height: 70px;
+    min-height: 70px;
+    padding: 0px 5px;
+    
+}
+
+.list-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.list-voltar {
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.582);
+    font-size: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.616);
+    transition: .3s;
+    padding: 1px 3px;
+    background-color: rgb(226, 70, 70);
+}
+.list-voltar:hover {
+    transition: .3s;
+    background-color: red;
+}
+.load {
+    font-size: 20px;
+}
+.icon-load {
+    animation: rotate 1s infinite;
+    margin: 0px 10px;
+}
+/*Telas grandes*/
+
+@media (min-width: 1469px) {
+    .profile-container {
+        margin: 1% 2.5%;
+        max-width: 250px;
+    }.list-voltar{
+        font-size: 40px;
+    }
+}
+@media (min-width: 1780px) {
+    .profile-container {
+        margin: 1% 3%;
+        max-width: 280px;
+    }
+    .dados {
+        font-size:22px ;
+    }
+    .about-text{
+        font-size: 19px;
+    }
+    .list-voltar{
+        font-size: 50px;
+    }
+}
+@media (min-width: 1700px) {
+    .profile-container {
+       transform: scale(1.2);
+       margin: 3% 3.4%;
+    }
+}@media (min-width: 1795px) {
+    .profile-container {
+       transform: scale(1.2);
+       margin: 3% 3.4%;
+    }
+}@media (min-width: 1980px) {
+    .profile-container {
+       transform: scale(1.3);
+       margin: 3% 4.3%;
+    }
+}@media (min-width: 2000px) {
+    .profile-container {
+       transform: scale(1.3);
+       margin: 3% 4.3%;
+    }
+}@media (min-width: 2200px) {
+    .profile-container {
+       transform: scale(1.5);
+       margin: 3% 5%;
+    }
+}@media (min-width: 2500px) {
+    .profile-container {
+       transform: scale(1.6);
+       margin: 3% 6%;
+    }
+}@media (min-width: 2600px) {
+    .profile-container {
+       transform: scale(1.55);
+       margin: 3% 6.26%;
+    }
+}
+
+/*Telas pequenas*/
+@media (max-width: 1225px) {
+    .profile-container { 
+        margin: 1% 4%;
+    }
+}@media (max-width: 972px) {
+    .profile-container { 
+        margin: 1% 11%;
+    }
+}@media (max-width: 880px) {
+    .profile-container { 
+        margin: 1% 9%;
+    }
+    .load {
+        font-size: 18px;
+    }
+}@media (max-width: 771px) {
+    .profile-container { 
+        margin: 2% 7%;
+    }
+}@media (max-width: 688px) {
+    .profile-container { 
+        margin: 2% 5%;
+    }
+    .load {
+        font-size: 15px;
+    }
+}@media (max-width: 621px) {
+    .profile-container { 
+        margin: 2% 3%;
+    }
+    
+}@media (max-width: 567px) {
+    .profile-container { 
+        display: flex;
+        flex-direction: column;
+        margin:3% 27%;   
+    }
+    .load {
+        font-size: 8px;
+    }
+}@media (max-width: 371px) {
+    .profile-container { 
+        display: flex;
+        flex-direction: column;
+        margin:3% 17%;   
+    }
+}

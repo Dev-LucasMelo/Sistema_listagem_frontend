@@ -1,0 +1,130 @@
+.Form-component{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+border: 3px solid #304D63;
+width: max-content;
+margin: 50px auto 0px auto;
+padding: 0px 0px 0px 0px;
+background-color: white;
+box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.473);
+
+}
+.icon-container{
+    padding: 10px;
+}
+.icon-form {
+font-size: 50px;
+color: #304D63;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #304D63;
+    padding: 5px 8px;
+    margin: 0px 5px 20px 5px;
+    font-weight: bold;
+}
+.name {
+    border: none;
+    width: 227px;
+    border-bottom: 1px solid black;
+    font-size: 15px;
+}
+.name:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+.sex-options {
+    padding: 7px 0px;
+    margin: 3px 0px -10px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+label,#masc,#fem {
+    cursor: pointer;
+}
+.sex-icon {
+    font-size: 13px;
+    margin: 0px 0px 0px 3px;
+}
+.textarea {
+    font-size: 14px;
+    max-width: 230px;
+    min-width: 230px;
+    max-height: 100px;
+    min-height: 70px;
+}
+
+.enviar,
+.voltar {
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.582);
+    font-size: 17px;
+    border: 1px solid rgba(0, 0, 0, 0.616);
+    transition: .3s;
+}
+.enviar {
+    background-color: rgb(116, 224, 116);
+}
+.voltar {
+    padding: 1px 3px;
+    background-color: rgb(226, 70, 70);
+}
+.enviar:hover {
+    transition: .3s;
+    background-color: rgb(50, 175, 50);
+}
+.voltar:hover {
+    transition: .3s;
+    background-color: red;
+}
+.buttons-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}@media (min-width: 1330px) {
+    .name {
+        width: 300px;
+        font-size: 20px;
+    }
+
+    .Form-component{
+        transform: scale(1.3);
+        margin: 13% auto;
+    }
+    .sex-options {
+        display: flex;
+        align-items: center;
+        font-size: 19px;
+    }
+    .sex-options div {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+   
+    .textarea {
+        font-size: 18px;
+        max-width: 280px;
+        min-width: 280px;
+        max-height: 100px;
+        min-height: 70px;
+    }
+}
+@media (min-width: 1760px) {
+    .Form-component{
+        transform: scale(1.5);
+        margin: 13% auto;
+    }
+}
